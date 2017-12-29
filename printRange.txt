@@ -1,0 +1,21 @@
+// Write a method called printRange that accepts two integers as arguments and prints the 
+// sequence of numbers between the two arguments, separated by spaces.
+// Print an increasing sequence if the first argument is smaller than the second; 
+// otherwise, print a decreasing sequence. If the two numbers are the same,
+// that number should be printed by itself. Here are some sample calls to printRange:
+
+public void printRange(int lowerB, int upperB){
+	if (lowerB==upperB){
+        System.out.print(lowerB);
+    }
+    if ( lowerB<upperB){
+        for (int i=lowerB; i<=upperB;i++){
+        System.out.print(i + " ");  
+        }
+    } 
+    if (lowerB>upperB){
+        for (int p=lowerB; p>=upperB;p--){
+        	System.out.print(p+ " ");
+           }
+     }
+}

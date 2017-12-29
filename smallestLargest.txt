@@ -1,0 +1,29 @@
+// Write a method named smallestLargest that asks the user to enter numbers, 
+// then prints the smallest and largest of all the numbers typed in by the user. 
+// You may assume the user enters a valid number greater than 0 for the number of
+// numbers to read. Here is an example dialogue:
+
+public static void smallestLargest(){
+    Scanner scanner = new Scanner(System.in);
+   
+System.out.print("How many numbers do you want to enter? ");
+    int input = scanner.nextInt();
+    int num=0;
+    int max=0;
+    int min=0;
+    for (int i=1;i<=input; i++){
+   	System.out.print("Number "+ i +": ");
+    	num= scanner.nextInt();
+       	 if (i==1){
+             max=num;
+    	 	 min=num;
+         }
+         if (num>max){
+         max=num;
+         }else if (num<min){
+          min=num;
+         }
+    }
+    System.out.println("Smallest = " + min);
+    System.out.println("Largest = " + max);
+}

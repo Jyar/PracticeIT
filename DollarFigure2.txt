@@ -1,0 +1,52 @@
+Write a Java program called DollarFigure that produces the following output. 
+Use nested for loops to capture the structure of the figure.
+The outputs below use a constant size of 3 (left) and 5 (right):
+
+// size 3	
+$$$******$$$
+**$$****$$**
+****$**$****
+
+// size 5
+$$$$$**********$$$$$
+**$$$$********$$$$**
+****$$$******$$$****
+******$$****$$******
+********$**$********
+
+public class DollarFigure2{
+public static final int size= 7;
+    
+public static void main (String [] args){
+
+    int secondFourth = size;
+    int middle =size*2;
+    int firstLast=0;
+    
+    for (int i=1;i<=size;i++){
+    
+        
+        for (int s=1;s<=firstLast;s++){
+        System.out.print("*");
+        }
+        for (int d=1;d<=secondFourth;d++){
+        System.out.print("$");
+        }
+        for (int r=1;r<=middle;r++){
+        System.out.print("*");
+        }
+        for (int m=1;m<=secondFourth;m++){
+        System.out.print("$");
+        }
+        for (int t=1;t<=firstLast;t++){
+        System.out.print("*");
+        }
+        firstLast += 2;
+        secondFourth--;
+        middle -=2;
+        
+    System.out.println("");
+    }
+
+}
+}

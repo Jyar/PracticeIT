@@ -1,0 +1,18 @@
+// Write a method named showTwos that shows the factors of 2 in a given integer. 
+
+public void showTwos(int numF){
+    String show="";
+    int count=0;
+    int num=numF; 
+   	 while (num%2==0){
+        count++; 
+         num= num/2;
+    	}
+    
+    for (int i=0; i<count;i++){
+    	show += "2 * ";
+    }
+        
+    show += num;
+System.out.println(numF + " = " + show);
+}

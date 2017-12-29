@@ -1,0 +1,46 @@
+// Write a Java program in a class named Window that produces the preceding figure as output.
+// Use nested for loops to print the repeated parts of the figure. Once you get it to work, 
+// add one class constant to your program so that the size of the figure can be changed simply by 
+// changing that constant's value. The example output shown is at a constant size of 3, but if you 
+// change the constant, the figure should grow larger and wider proportionally.
+
+public class Window {
+public static final int num = 3;  
+    
+public static void main (String [] args) {
+ for (int y=0; y<2; y++){
+    for (int p=0;p<3;p++){
+    System.out.print("+");
+ 
+    	if (p<2){
+    		for (int i=0;i<num;i++){
+    		System.out.print("=");
+    		}
+   	 	}
+ 	}
+    System.out.println(); 
+  
+     	for (int t=0;t<num;t++){
+			
+                for (int p=0;p<3;p++){
+                     
+     				System.out.print("|");
+                	for (int q=0; q<num; q++){
+                		System.out.print(" ");
+                	}
+                    
+    			}
+                System.out.println();
+      	}
+  }
+      for (int p=0;p<3;p++){
+    System.out.print("+");
+ 
+    	if (p<2){
+    		for (int i=0;i<num;i++){
+    		System.out.print("=");
+    		}
+   	 	}
+ 	}
+}
+}

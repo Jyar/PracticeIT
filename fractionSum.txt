@@ -1,0 +1,17 @@
+// Write a method called fractionSum that accepts an integer parameter n 
+// and returns as a double the sum of the first n terms of the sequence:
+
+
+public double fractionSum(int n){
+double num=2;
+double sum = 0;
+    
+    if ( n>=2){for (int i=1; i<n;i++){
+    	sum = sum + (1/num);
+        num++;
+    	} 
+    }
+    sum++;
+    
+return sum;
+}
