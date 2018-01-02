@@ -1,0 +1,21 @@
+
+
+public void printAverage(Scanner console){
+    
+    int number = 0;
+    int tally = 0;
+    double total = 0;
+    
+    while (console.hasNext()){
+        System.out.print("Type a number: " );
+        number = console.nextInt();
+        if ( number < 0 && tally > 0) {
+            System.out.print("Average was " + total/tally);
+            break;
+        }
+        total += number;
+        tally++;
+        
+      
+    }
+}
