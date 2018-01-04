@@ -1,0 +1,17 @@
+public String toString() {
+    String isNeg = "";
+    String zeros = "";
+    
+    if (balance < 0) {
+        isNeg = "-";
+        balance = -balance;
+    }
+    String text = String.valueOf(Math.abs(balance));
+    int integerPlaces = text.indexOf('.');
+    int decimalPlaces = text.length() - integerPlaces - 1;
+    
+    if (decimalPlaces == 1){zeros = "0";}
+    if (decimalPlaces == 0){zeros ="00";}
+    
+    return name + ", " +  isNeg + "$" + balance + zeros;
+}
