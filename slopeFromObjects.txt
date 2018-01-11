@@ -1,0 +1,12 @@
+public double slope(Point other){
+    double x1 = this.getX();
+    double y1 = this.getY();
+    double x2 = other.x;
+    double y2 = other.y;
+    
+    if ((x2 == x1 && y2 == y1) || x2 == 0 ){
+        throw new IllegalArgumentException();
+    }
+    
+    return ((y2-y1)/(x2-x1));
+}
