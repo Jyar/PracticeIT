@@ -1,0 +1,21 @@
+public class Line{
+    Point firstPoint = null;
+    Point secondPoint = null;
+    
+    
+    public Line(Point p1, Point p2){
+        firstPoint = p1;
+        secondPoint = p2;
+    }
+    public Point getP1(){
+        return firstPoint;
+    }
+    public Point getP2(){
+        return secondPoint;
+    }
+    public String toString(){
+        return "[(" + (int) firstPoint.getX() + ", " + (int) firstPoint.getY() + "), " + "(" + (int) secondPoint.getX() + ", " + (int) secondPoint.getY() + ")]";
+    }
+
+
+}
